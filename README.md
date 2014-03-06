@@ -37,6 +37,35 @@ $ gj sample.json
     ]
   }
 }
+
+$ cat sample.json | gj
+{
+  "object": {
+    "buffer_size": 10,
+    "Databases": [
+      {
+        "host": "localhost",
+        "user": "root",
+        "pass": "",
+        "type": "mysql",
+        "name": "go",
+        "Tables": [
+          {
+            "name": "testing",
+            "statment": "teststring",
+            "regex": "teststring ([0-9]+) ([A-z]+)",
+            "Types": [
+              {
+                "id": "int",
+                "value": "string"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
 ```
 
 happy :)
